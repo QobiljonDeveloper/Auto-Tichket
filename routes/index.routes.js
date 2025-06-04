@@ -4,10 +4,19 @@ const userRouter = require("./user.routes");
 const roleRouter = require("./role.routes");
 const userRoleRouter = require("./user.role.routes");
 const authRouter = require("./auth.routes");
+const busRouter = require("./buses.routes");
+const busDriverRouter = require("./bus_driver.routes");
+const driverRouter = require("./driver.routes");
+const regionRouter = require("./region.routes");
+const districtRouter = require("./district.routes");
 
 router.use("/user", userRouter);
 router.use("/role", roleRouter);
 router.use("/user-role", userRoleRouter);
 router.use("/auth", authRouter);
-
+router.use("/bus", busRouter);
+router.use("/bus-driver", busDriverRouter);
+router.use("/driver", driverRouter);
+router.use("/region", regionRouter);
+router.use("/district", districtRouter);
 module.exports = router;

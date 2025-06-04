@@ -27,9 +27,6 @@ const User = sequelize.define("users", {
   hashed_password: {
     type: DataTypes.STRING,
   },
-  hashed_token: {
-    type: DataTypes.STRING,
-  },
   is_active: {
     type: DataTypes.BOOLEAN,
     defaultValue: false,
