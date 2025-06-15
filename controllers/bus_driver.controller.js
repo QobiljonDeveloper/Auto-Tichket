@@ -52,7 +52,6 @@ const getAllBusDrivers = async (req, res) => {
   }
 };
 
-// ID orqali bitta bog‘lanishni olish
 const getBusDriverById = async (req, res) => {
   try {
     const { id } = req.params;
@@ -73,7 +72,6 @@ const getBusDriverById = async (req, res) => {
   }
 };
 
-// Haydovchini avtobusdan olib tashlash
 const deleteBusDriver = async (req, res) => {
   try {
     const { id } = req.params;
